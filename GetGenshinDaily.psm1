@@ -1,7 +1,9 @@
 Function Get-GenshinDaily {
     [CmdletBinding()]
     param (
+        [Parameter(Mandatory=$true, Position=0)]
         [Int]$UserId,
+        [Parameter(Mandatory=$true, Position=1)]
         [String]$Token
     )
     $Url = "https://hk4e-api-os.mihoyo.com/event/sol/sign?act_id=e202102251931481"
