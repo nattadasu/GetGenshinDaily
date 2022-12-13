@@ -16,6 +16,24 @@ Function Get-GenshinDaily {
         "-10001" { Write-Error "Invalid request" }
         Default { Write-Error "Unknown error" }
     }
+    <#
+    .SYNOPSIS
+        Get Genshin Daily Reward from HoyoLab
+    .DESCRIPTION
+        Get Genshin Daily Reward from HoyoLab. This function will return a message from the response.
+    .PARAMETER UserId
+        User ID from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltuid`
+    .PARAMETER Token
+        Token from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltoken`
+    .EXAMPLE
+        Get-GenshinDaily -UserId 123456789 -Token 123456789
+    .EXAMPLE
+        ggd -UserId 123456789 -Token 123456789
+    .EXAMPLE
+        daily -UserId 123456789 -Token 123456789
+    .LINK
+        https://github.com/nattadasu/GetGenshinDaily
+    #>
 }
 
 Set-Alias -Name ggd -Value Get-GenshinDaily
