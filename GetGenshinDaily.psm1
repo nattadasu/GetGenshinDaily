@@ -20,21 +20,21 @@ Function Get-GenshinDaily {
     }
     <#
     .SYNOPSIS
-        Get Genshin Daily Reward from HoyoLab
+    Get Genshin Daily Reward from HoyoLab
     .DESCRIPTION
-        Get Genshin Daily Reward from HoyoLab. This function will return a message from the response.
+    Get Genshin Daily Reward from HoyoLab. This function will return a message from the response.
     .PARAMETER UserId
-        User ID from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltuid`
+    User ID from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltuid`
     .PARAMETER Token
-        Token from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltoken`
+    Token from HoyoLab. You can grab this from your browser's cookie in Hoyolab: `ltoken`
     .EXAMPLE
-        Get-GenshinDaily -UserId 123456789 -Token 123456789
+    Get-GenshinDaily -UserId 123456789 -Token 123456789
     .EXAMPLE
-        ggd -UserId 123456789 -Token 123456789
+    ggd -UserId 123456789 -Token 123456789
     .EXAMPLE
-        daily -UserId 123456789 -Token 123456789
+    daily -UserId 123456789 -Token 123456789
     .LINK
-        https://github.com/nattadasu/GetGenshinDaily
+    https://github.com/nattadasu/GetGenshinDaily
     #>
 }
 
