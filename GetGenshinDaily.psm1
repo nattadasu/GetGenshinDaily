@@ -14,7 +14,7 @@ Function Get-GenshinDaily {
         "-100" { Write-Error "Token expired, not logged in, or auth error" }
         "-5003" { Write-Error "You have already signed in today" }
         "-10001" { Write-Error "Invalid request" }
-        Default { Write-Error "Unknown error" }
+        Default { Write-Error "Unknown error: $($json.retcode) $($json.message)" }
     }
     <#
     .SYNOPSIS
